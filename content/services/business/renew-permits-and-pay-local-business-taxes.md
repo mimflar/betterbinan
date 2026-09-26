@@ -1,13 +1,13 @@
-# Renew Permits and Pay Local Business Taxes — Lapu-Lapu City
+# Renew Permits and Pay Local Business Taxes — City of Biñan
 
-Use this guide to renew your **Mayor’s/Business Permit** and **Local Business Taxes (LBT)** with the City Government.
+Use this guide to renew your **Mayor’s/Business Permit** and **Local Business Taxes (LBT)** with the City Government of Biñan.
 
 ---
 
 ## Who Must Renew
 
-- All businesses operating in Lapu-Lapu City: **sole proprietors, partnerships, corporations, NGOs, cooperatives, online sellers with local presence**, and professionals with a business office.
-- Renewal applies to **main office and each branch**.
+- All businesses operating in the City of Biñan: **sole proprietors, partnerships, corporations, NGOs, cooperatives, online sellers with local presence**, and professionals with a business office.
+- Renewal applies to the **main office and each branch** located within the city.
 
 ---
 
@@ -17,7 +17,7 @@ Use this guide to renew your **Mayor’s/Business Permit** and **Local Business 
 - **Payments:** either **annually** or **quarterly** (1st qtr due during renewal; next quarters usually due on or before the **20th** day of April, July, and October).
 - Late filings incur **surcharges and interest**.
 
-> Tip: Prepare your documents **by December** so you can file in the first week of January.
+> Tip: Prepare your documents **by December** so you can file in the first week of January and avoid the deadline rush at City Hall.
 
 ---
 
@@ -25,7 +25,7 @@ Use this guide to renew your **Mayor’s/Business Permit** and **Local Business 
 
 **Business Information**
 
-- Prior year **Mayor’s/Business Permit** and **Official Receipts**.
+- Prior year **Mayor’s/Business Permit** and **Official Receipts (OR)**.
 - **DTI/SEC/CDA** registration (whichever applies).
 - **BIR** Certificate of Registration (Form 2303) and **Authority to Print** (if any).
 - **Contract of Lease** / **Tax Declaration** / **Certificate of Occupancy** (as applicable).
@@ -38,9 +38,9 @@ Use this guide to renew your **Mayor’s/Business Permit** and **Local Business 
 
 **Regulatory Clearances** (city/BPLO may route you during assessment)
 
-- **Barangay Clearance** (for business).
-- **Sanitary Permit** (Health).
-- **Fire Safety Inspection Certificate (FSIC)** (BFP).
+- **Barangay Business Clearance** (from your host barangay in Biñan).
+- **Sanitary Permit** (from the City Health Office).
+- **Fire Safety Inspection Certificate (FSIC)** (from BFP Biñan).
 - **Environmental/Disposal Permits** (if required by the nature of business).
 - **Zoning/Occupancy** updates if there were renovations or transfers.
 
@@ -48,10 +48,23 @@ Use this guide to renew your **Mayor’s/Business Permit** and **Local Business 
 
 ---
 
-## Step-by-Step (Walk-In)
+## Step-by-Step (Online Renewal - Recommended)
+
+The City of Biñan highly encourages utilizing their digital portal to avoid long lines during the January renewal period.
+
+1. Go to the **[Biñan City Official Website](https://www.binan.gov.ph)**.
+2. Navigate to the **Online Business Registration & Payment** portal.
+3. Upload clear, scanned PDF copies of your requirements (Gross Sales Declaration, Barangay Clearance, previous permits).
+4. Wait for the online assessment from the BPLO and City Treasurer's Office.
+5. Pay your Local Business Tax via the accepted e-payment channels.
+6. Await instructions on how to claim your physical permit and plates.
+
+---
+
+## Step-by-Step (Walk-In / BOSS)
 
 1. **Pre-screening / Queuing**
-   - Go to the **Business One-Stop Shop (BOSS)** during the renewal period.
+   - Go to the **Business One-Stop Shop (BOSS)** at the **Biñan City Hall Compound** (or the designated renewal venue, such as the Alonte Sports Arena, if announced by the CIO).
    - Get your queue number; submit last year’s permit and basic IDs for pre-check.
 
 2. **Application & Declaration**
@@ -66,7 +79,7 @@ Use this guide to renew your **Mayor’s/Business Permit** and **Local Business 
    - Choose **Annual** or **Quarterly** payment.
 
 5. **Payment**
-   - Pay at the **City Treasurer’s** cashier or accredited payment options (if available).
+   - Pay at the **City Treasurer’s** cashier.
    - Receive **Official Receipt(s)**.
 
 6. **Releasing**
@@ -75,19 +88,9 @@ Use this guide to renew your **Mayor’s/Business Permit** and **Local Business 
 
 ---
 
-## (If Available) Online / Hybrid Filing
-
-- Some transactions may be done via the city’s **online business portal** or **pre-assessment** channels (if announced).
-- Prepare **scanned PDFs** of your documents (clear, legible; 1 file per requirement).
-- After online assessment, proceed to **payment** (e-payment or onsite) and **permit releasing** per instructions.
-
-> If unsure, confirm at the start of the renewal period if **online pre-filing** is open for your business type.
-
----
-
 ## How Your Dues Are Computed
 
-- **Local Business Tax (LBT):** Based on **gross sales/receipts** of the prior year and your **business category** (rates and brackets per local tax ordinance).
+- **Local Business Tax (LBT):** Based on **gross sales/receipts** of the prior year and your **business category** (rates and brackets per Biñan's Local Revenue Code).
 - **Regulatory/Service Fees:** e.g., **Sanitary**, **Zoning**, **Garbage**, **Signage**, **Occupational**, and **Fire** fees/clearances.
 - **Other Assessments:** May apply for **delivery vehicles**, **storage/stockrooms**, **machinery**, or **special permits**.
 
@@ -95,7 +98,7 @@ Use this guide to renew your **Mayor’s/Business Permit** and **Local Business 
 
 ## Penalties for Late Renewal
 
-- **Surcharge** (commonly up to **25%** of the tax due) **plus** **monthly interest** (commonly up to **2% per month**) until fully paid, subject to the city’s ordinance caps.
+- **Surcharge** of **25%** of the tax due, **plus** **monthly interest** of **2% per month** until fully paid.
 - Possible **closure/tagging** and **inspection findings** if you continue operations without a valid permit.
 
 ---
@@ -114,7 +117,7 @@ Use this guide to renew your **Mayor’s/Business Permit** and **Local Business 
 - **Bring copies** of everything (and soft copies on a USB/phone).
 - If you had **renovations** or **new equipment**, bring **permits/invoices**—it speeds up Zoning/BFP review.
 - **Coordinate early** with your **lessor** for building-related documents (occupancy, fire compliance).
-- For **food/health businesses**, schedule **Sanitary inspections** early; ensure staff have updated **health cards** if required.
+- For **food/health businesses**, schedule **Sanitary inspections** early; ensure staff have updated **health cards** from the City Health Office.
 - Keep a **renewal calendar**: Q2/Q3/Q4 due dates if you chose quarterly.
 
 ---
@@ -125,7 +128,7 @@ Use this guide to renew your **Mayor’s/Business Permit** and **Local Business 
 - [ ] **DTI/SEC/CDA** registration & **BIR 2303**
 - [ ] **Lease/Occupancy**/Tax Declaration (as applicable)
 - [ ] **Sworn Gross Sales/Receipts** (prev. year) / **FS**
-- [ ] **Barangay Clearance** (business)
+- [ ] **Barangay Business Clearance**
 - [ ] **Sanitary** & **FSIC** (and other routed clearances)
 - [ ] **Valid ID** / **SPA or Board Resolution** for representative
 - [ ] Payment (cash/card) for **taxes & fees**

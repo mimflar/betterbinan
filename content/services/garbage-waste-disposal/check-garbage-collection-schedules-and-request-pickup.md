@@ -1,6 +1,6 @@
-# Check Garbage Collection Schedules and Request Pickup — Lapu-Lapu City
+# Check Garbage Collection Schedules and Request Pickup — City of Biñan
 
-The City Government of Lapu-Lapu manages **regular garbage collection** through the **City Environment and Natural Resources Office (CENRO)** and barangays. Residents and business owners are encouraged to follow the schedule and proper segregation rules.
+The City Government of Biñan manages **regular garbage collection** through the **City Environment and Natural Resources Office (CENRO)** and local barangays. Residents and business owners are strictly required to follow the schedule and proper segregation rules.
 
 ---
 
@@ -16,7 +16,7 @@ The City Government of Lapu-Lapu manages **regular garbage collection** through 
 
 1. **Barangay Hall** — each barangay posts its official collection schedule.
 2. **Barangay Facebook Pages** — most update residents when trucks are delayed or rescheduled.
-3. **City Information Office (CIO)** or **CENRO** announcements for citywide advisories (e.g., during holidays or typhoon disruptions).
+3. **Biñan City Information Office (CIO)** or **CENRO** announcements for citywide advisories (e.g., during holidays, festivals, or typhoon disruptions).
 
 > Tip: Post the collection calendar on your fridge or gate to remind the household which days to take bins out.
 
@@ -30,25 +30,25 @@ For **bulk waste** (e.g., furniture, appliances, construction debris, yard trimm
 
 1. Visit your **Barangay Hall** or contact the **Barangay Environment Committee**.
 2. Provide details: type of waste, estimated volume, and address.
-3. Barangay coordinates with **CENRO** for scheduling a **special truck pickup**.
+3. The barangay will coordinate with **CENRO** to schedule a **special truck pickup**.
 4. Some barangays may require a **minimal fee** for bulk or special disposal.
 
 **Items usually needing special pickup**
 
-- Large furniture, mattresses, appliances, e-waste
+- Large furniture, mattresses, appliances
 - Construction/demolition debris
-- Hazardous household waste (paints, chemicals, batteries)
+- Yard trimmings and heavy branches
 
 ---
 
 ## 3) Contact Information
 
 - **City Environment and Natural Resources Office (CENRO)**  
-  Lapu-Lapu City Hall, Government Complex, Brgy. Pajo  
-  Phone: (032) 340-0004 (City Hall trunkline, ask for CENRO)  
-  Updates: via **City Information Office** FB page
+  City Hall Compound, Brgy. Zapote, City of Biñan  
+  Phone: (049) 513-5096 / (049) 523-5409  
+  Updates: via **Biñan City Information Office - CIO** FB page
 
-- **Barangay Halls** — each barangay has an Environment/ Solid Waste desk for local schedules and pickup requests.
+- **Barangay Halls** — each barangay has an Environment/Solid Waste desk for local schedules and pickup requests.
 
 ---
 
@@ -66,9 +66,3 @@ For **bulk waste** (e.g., furniture, appliances, construction debris, yard trimm
 
 - Businesses must comply with **segregation** and may need to contract **accredited private haulers** for bulk/industrial waste.
 - Keep proof of disposal (receipts/hauling contracts) for compliance inspections by CENRO.
-
----
-
-### Key Reminder
-
-Following your barangay’s **garbage collection schedule** and properly requesting **special pickups** keeps the city clean and prevents flooding, pests, and health risks.

@@ -1,41 +1,42 @@
-# Lapu-Lapu City Government: Free Health Services
+# Free Check-ups, Basic Medicines, and Vaccines — City of Biñan
 
-The Lapu-Lapu City Government offers free **check-ups, medicines, and vaccines** through the City Health Office (CHO), barangay health centers, and partner programs.
+The City Government of Biñan offers free **check-ups, medicines, and vaccines** through the City Health Office (CHO), Barangay Health Centers, and the Biñan E-Konsulta telemedicine program.
 
 ---
 
 ## 1. Free Medical Check-ups
 
-| Service              | Where                        | Schedule                                     | Requirements                                              |
-| -------------------- | ---------------------------- | -------------------------------------------- | --------------------------------------------------------- |
-| General consultation | City/Barangay Health Centers | Mon–Fri, 8 AM–5 PM (varies by health center) | Individual Treatment Record (ITR) — issued on first visit |
+| Service                             | Where                      | Schedule                              | Requirements                                                                                 |
+| :---------------------------------- | :------------------------- | :------------------------------------ | :------------------------------------------------------------------------------------------- |
+| **Biñan E-Konsulta** (Telemedicine) | Hotline: **0998-575-8949** | Mon–Fri, 8 AM–5 PM                    | Name, Age, Barangay, and Symptoms via Text/Call                                              |
+| **General Consultation**            | Barangay Health Centers    | Mon–Fri, 8 AM–5 PM (varies by center) | Valid ID (Proof of Biñan residency); Individual Treatment Record (ITR) issued on first visit |
 
 ---
 
 ## 2. Free Basic Medicines
 
-| Service                                          | Where                                    | Schedule           | Requirements                                                                                     |
-| ------------------------------------------------ | ---------------------------------------- | ------------------ | ------------------------------------------------------------------------------------------------ |
-| Free basic medicines                             | City Health Office (CHO) pharmacy        | Mon–Fri, 8 AM–5 PM | Doctor’s prescription and/or referral from hospital/clinic                                       |
-| Medicines for indigent seniors (MAIFIPP program) | Partner pharmacies (Basak, Carajay, Ibo) | Pharmacy hours     | Must be an indigent senior citizen, bona fide resident; coverage caps (e.g., ₱3,000 out-patient) |
+| Service                                   | Where                                  | Schedule           | Requirements                                                         |
+| :---------------------------------------- | :------------------------------------- | :----------------- | :------------------------------------------------------------------- |
+| **Free Basic Medicines**                  | CHO Pharmacy / Barangay Health Centers | Mon–Fri, 8 AM–5 PM | Doctor’s prescription (or E-Konsulta digital prescription)           |
+| **Senior Citizen & PWD Maintenance Meds** | Barangay Health Centers                | Clinic hours       | Registered Senior Citizen/PWD ID; must be on the barangay masterlist |
 
 ---
 
 ## 3. Free Vaccines & Immunization
 
-| Beneficiary       | Vaccine/Service                                          | Where                        | Schedule                        | Requirements                                             |
-| ----------------- | -------------------------------------------------------- | ---------------------------- | ------------------------------- | -------------------------------------------------------- |
-| Children          | BCG, Pentavalent, OPV/IPV, MMR, Hepatitis B, PCV13 (EPI) | Barangay Health Centers      | Typically Wednesdays, 8 AM–4 PM | ECCD card (first-timers can get one onsite)              |
-| Pregnant women    | Tetanus Toxoid vaccine + supplements                     | Barangay Health Centers      | During prenatal services        | Proof of pregnancy, ECCD/record                          |
-| Animal bite cases | Anti-rabies vaccine (first dose free)                    | Animal Bite Treatment Center | Clinic hours                    | Proof of Lapu-Lapu residency (e.g., voter’s certificate) |
+| Beneficiary           | Vaccine / Service                                      | Where                                                    | Schedule                          | Requirements                                            |
+| :-------------------- | :----------------------------------------------------- | :------------------------------------------------------- | :-------------------------------- | :------------------------------------------------------ |
+| **Children**          | BCG, Pentavalent, OPV/IPV, MMR, Hepatitis B, PCV (EPI) | Barangay Health Centers                                  | Varies by Barangay ("Bakuna Day") | Baby Book / ECCD card (first-timers can get one onsite) |
+| **Pregnant Women**    | Tetanus Toxoid vaccine + supplements                   | Barangay Health Centers                                  | During prenatal services          | Proof of pregnancy, Maternity Record                    |
+| **Animal Bite Cases** | Anti-rabies vaccine                                    | Animal Bite Treatment Center (CHO / Biñan City Hospital) | Clinic hours                      | Proof of Biñan residency (e.g., Voter’s ID/Certificate) |
+| **Seniors**           | Flu & Pneumococcal Vaccines                            | Barangay Health Centers                                  | Seasonal / Announced by CHO       | Senior Citizen ID                                       |
 
 ---
 
 ## How to Avail
 
-1. **Check-ups** → Go to your Barangay Health Center or City Health Office; first-timers will be issued an ITR.
-2. **Medicines** → Bring a doctor’s prescription/referral; submit at CHO pharmacy window.
-3. **Child immunization** → Visit your barangay health center on immunization day with ECCD card.
-4. **Pregnancy services** → Attend prenatal visits at the barangay health center for free vaccine and supplements.
-5. **Anti-rabies** → Report to the Animal Bite Treatment Center; bring proof of residency.
-6. **Senior citizen medicines** → Visit participating partner pharmacies; follow MAIFIPP guidelines.
+1. **Check-ups (Remote)** → Text or call the Biñan E-Konsulta hotline (0998-575-8949) to consult a doctor without leaving home.
+2. **Check-ups (Physical)** → Go to your local Barangay Health Center; first-timers will be issued an ITR.
+3. **Medicines** → Bring a physical or digital prescription and present it to the BHW or CHO pharmacy window.
+4. **Child Immunization** → Visit your barangay health center on their designated immunization day with the Baby Book.
+5. **Anti-rabies** → Wash the wound immediately with soap and water for 15 minutes, then report to the Animal Bite Treatment Center with proof of residency.

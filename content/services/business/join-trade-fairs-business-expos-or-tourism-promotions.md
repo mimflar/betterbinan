@@ -1,6 +1,6 @@
-# Participate in Local Trade Fairs, Business Expos, and Tourism Promotion Activities — Lapu-Lapu City
+# Participate in Local Trade Fairs, Business Expos, and Tourism Promotion Activities — City of Biñan
 
-Showcase your products and services, meet buyers, and boost your brand by joining **city- and region-led trade fairs, business expos, and tourism promotions**.
+Showcase your products and services, meet buyers, and boost your brand by joining **city- and region-led trade fairs, business expos, and tourism promotions** in Biñan and the wider Laguna province.
 
 ---
 
@@ -8,19 +8,19 @@ Showcase your products and services, meet buyers, and boost your brand by joinin
 
 - **MSMEs** (sole proprietors, partnerships, corporations, cooperatives)
 - **Tourism enterprises** (accommodations, tour operators/guides, transport, attractions, events, MICE suppliers)
-- **Cultural creators** (handicrafts, fashion, food, wellness, creative tech)
+- **Cultural creators** (handicrafts, fashion, food, wellness, creative tech, local heritage products like Puto Biñan)
 - **LGU-accredited community groups** (livelihood associations, women/youth groups)
 
-**Priority is often given** to registered local businesses, OTOP-branded products, startups with export potential, and tourism enterprises aligned with the city’s events calendar.
+**Priority is often given** to registered local businesses, OTOP (One Town, One Product) branded products, startups with export potential, and tourism enterprises aligned with the city’s events calendar (such as the Puto Latik Festival).
 
 ---
 
 ## Event Types You’ll See
 
-- **City/Barangay Trade Fairs** – usually tied to festivals, holidays, and civic celebrations
-- **Business Expos & Startup Showcases** – buyers’ meets, B2B networking, product launches
-- **Tourism Promotion Activities** – travel marts, familiarization (Fam) tours, festivals, MICE activations
-- **Sector-Specific Bazaars** – food & beverage, fashion & crafts, wellness & health, marine/leisure
+- **City/Barangay Trade Fairs** – usually tied to the Puto Latik Festival (May), Araw ng Biñan (February), and Christmas bazaars.
+- **Business Expos & Startup Showcases** – buyers’ meets, B2B networking, product launches.
+- **Tourism Promotion Activities** – travel marts, familiarization (Fam) tours, heritage site activations.
+- **Sector-Specific Bazaars** – food & beverage, fashion & crafts, wellness & health.
 
 ---
 
@@ -72,9 +72,9 @@ Showcase your products and services, meet buyers, and boost your brand by joinin
 ## Program Benefits You Can Tap
 
 - **Subsidized booth fees** for local MSMEs or accredited tourism enterprises
-- **Product development & mentoring** (branding, packaging, costing, export-readiness)
+- **Product development & mentoring** (branding, packaging, costing, export-readiness via Negosyo Center Biñan)
 - **Market matching** (B2B buyer programs, hotel/retail/online marketplace onboarding)
-- **Media exposure** (LGU press, social media spotlights, tourism campaigns)
+- **Media exposure** (LGU press, social media spotlights via the City Information Office)
 
 ---
 
@@ -110,33 +110,32 @@ Showcase your products and services, meet buyers, and boost your brand by joinin
 
 ---
 
-## Where to Watch for Calls & Schedules (Lapu-Lapu / Cebu)
+## Where to Watch for Calls & Schedules (Biñan / Laguna)
 
-- **Lapu-Lapu City**: City Information Office, Business Permits & Licensing Office (BOSS announcements), City Tourism & Cultural Affairs
-- **Negosyo Center / MSME Office**: product dev, fairs, OTOP activities
-- **Tourism Bodies**: city/regional tourism offices for travel marts, festivals, Fam tours, MICE events
-- **Chambers & Associations**: local chamber of commerce, hotel/resort associations, exporters’ groups
-- **Schools & Malls**: seasonal bazaars, startup fairs, internship & career expos
+- **Biñan City**: City Information Office (CIO), Business Permits & Licensing Office (BPLO), Biñan City Culture, History, Arts and Tourism Office (BCHATO)
+- **Negosyo Center / MSME Office**: product dev, fairs, OTOP activities (Located at Biñan City Hall)
+- **Tourism Bodies**: Laguna Provincial Tourism Office, regional travel marts, festivals, Fam tours
+- **Schools & Malls**: Seasonal bazaars at local malls (e.g., Pavilion Mall, Southwoods Mall), startup fairs at local universities.
 
 ---
 
-# Key Local Contacts — Lapu-Lapu City
+# Key Local Contacts — City of Biñan
 
 Use these offices when coordinating for **trade fairs, business expos, permits, and tourism promotion activities**.
 
 ---
 
-| Office / Role                                                                 | Address / Location                                    | Contact Number  | Email / Other Contact Info                                                                                                                                   |
-| ----------------------------------------------------------------------------- | ----------------------------------------------------- | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Business Permit & Licensing Office (BPLO)**                                 | City Hall Main Building, Lapu-Lapu Government Complex | (032) 340-0004  | —                                                                                                                                                            |
-| **PESO Lapu-Lapu City** (Student Employment, Local Promotions)                | Pajo, Lapu-Lapu City, Cebu 6015                       | (032) 340-8264  | Facebook: [PESO Lapu-Lapu City](https://ph.locale.online/peso-lapu-lapu-city-47947610.html)                                                                  |
-| **City Information Office / Treasurer’s Office**                              | Lapu-Lapu City Hall / Hoops Dome during events        | (032) 340-1615  | Updates: [Official Facebook Page](https://www.facebook.com/photo.php?fbid=122128211810564979&id=61566949391179&set=a.122105111324564979)                     |
-| **Lapu-Lapu City Tourism Office**                                             | City Government / Tourism Department                  | +63 32 495-5593 | Email: llctourism.inquiry@gmail.com • [Instagram Location Page](https://www.instagram.com/explore/locations/2149053888682923/lapu-lapu-city-tourism-office/) |
-| **City-Wide Trade Fair / Renewal Venue** (used for permit renewals and expos) | Hoops Dome, Barangay Gun-ob                           | —               | News: [SunStar — Biz Permit Renewals at Hoops Dome](https://www.sunstar.com.ph/cebu/lapu-launches-new-system-for-biz-permit-renewals)                        |
+| Office / Role                                                     | Address / Location                   | Contact / Email                                                 |
+| :---------------------------------------------------------------- | :----------------------------------- | :-------------------------------------------------------------- |
+| **Business Permit & Licensing Office (BPLO)**                     | City Hall Compound, Brgy. Zapote     | (049) 513-5028 <br> bplo@binan.gov.ph                           |
+| **Public Employment Service Office (PESO)**                       | City Hall Compound, Brgy. Zapote     | Facebook: [PESO Biñan City](https://www.facebook.com/pesobinan) |
+| **City Information Office (CIO)**                                 | City Hall Compound, Brgy. Zapote     | (049) 513-5013 <br> cio@binan.gov.ph                            |
+| **Biñan City Culture, History, Arts and Tourism Office (BCHATO)** | Old Municipal Building / Plaza Rizal | Facebook: [BCHATO](https://www.facebook.com/BCHATO)             |
+| **Alonte Sports Arena** _(Major Event Venue)_                     | Brgy. Zapote, Biñan City             | Managed via City Administrator's Office                         |
 
 ---
 
-✅ Tip: Save these contacts and follow their **Facebook pages** — most trade fair and expo announcements in Lapu-Lapu are posted there first.
+✅ Tip: Save these contacts and follow the **Biñan City Information Office - CIO** Facebook page — most trade fair and expo announcements for the city are posted there first.
 
 ---
 
@@ -144,10 +143,10 @@ Use these offices when coordinating for **trade fairs, business expos, permits, 
 
 > **Subject:** Participation Inquiry – [Your Brand] for [Event Name/Date]  
 > Hello [Organizer Name],  
-> We’re a Lapu-Lapu–based [business type] offering [brief product/service]. We’d like to apply for a booth at **[Event Name]** on **[Date]**.  
+> We’re a Biñan-based [business type] offering [brief product/service]. We’d like to apply for a booth at **[Event Name]** on **[Date]**.  
 > **Attachments:** Business registration, product list/prices, photos, compliance (FDA/accreditation).  
 > **Needs:** [table + 1 outlet + 500W], ingress day-before preferred.  
-> Thank you and we look forward to promoting Lapu-Lapu products/tourism at your event.  
+> Thank you and we look forward to promoting Biñan products/tourism at your event.  
 > **Contact:** [Name, Mobile, Email, Links]
 
 ---
