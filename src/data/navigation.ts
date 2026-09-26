@@ -71,9 +71,9 @@ export const footerNavigation = {
     },
   ],
   socialLinks: [
-    { label: 'Facebook', href: 'https://facebook.com/govph' },
+    { label: 'Facebook', href: 'https://www.facebook.com/CIOBinan/' },
     { label: 'Twitter', href: 'https://twitter.com/govph' },
-    { label: 'Instagram', href: 'https://instagram.com/govph' },
+    { label: 'Instagram', href: 'https://www.instagram.com/cityofbinan/' },
     { label: 'YouTube', href: 'https://youtube.com/govph' },
   ],
 };

@@ -1,9 +1,9 @@
 {
-  "site_name": "Biñan City Portal",
-  "site_description": "A community-run portal for the Biñan City",
+  "site_name": "City of Biñan Portal",
+  "site_description": "The centralized portal for services and information from the City Government of Biñan.",
   "hero": {
-    "title": "Welcome to BetterGov.ph",
-    "subtitle": "A community-run portal to find information of the Biñan City Government",
+    "title": "Welcome to the City of Biñan",
+    "subtitle": "Serbisyong Arman. Your gateway to local government services, announcements, and civic information.",
     "nationalId": "National ID",
     "birthCertificate": "Birth Certificate",
     "businessRegistration": "Business Registration"
@@ -11,13 +11,13 @@
   "services": {
     "title": "Services & Information",
     "governmentServices": "Government Services",
-    "description": "Access official government services quickly and easily. Find what you need for citizenship, business, education, and more.",
+    "description": "Access official government services quickly and easily. Find what you need for business, health, education, and more in Biñan City.",
     "viewAll": "View All Services",
     "viewAllCategory": "View All"
   },
   "governmentActivity": {
     "title": "Government Activity",
-    "description": "Stay updated with the latest government activities and announcements."
+    "description": "Stay updated with the latest programs and announcements from the City Government of Biñan."
   },
   "weather": {
     "title": "Weather Updates"
@@ -29,7 +29,7 @@
     "title": "Latest News & Updates"
   },
   "footer": {
-    "copyright": "© 2025 BetterGov. All content is public domain unless otherwise specified."
+    "copyright": "© 2026 City Government of Biñan. All content is public domain unless otherwise specified."
   },
   "navbar": {
     "government": "Government",
@@ -39,11 +39,11 @@
   },
   "joinUs": {
     "stripTitle": "🚀 Join the #CivicTech Revolution",
-    "stripSubtitle": "Help build the future of the Philippines and governance through technology",
+    "stripSubtitle": "Help build the future of Philippine governance through technology.",
     "joinNow": "Join Now",
     "discord": "Discord",
     "bannerTitle": "Join the #CivicTech Revolution",
-    "bannerSubtitle": "Help build the future of the Philippines and governance through technology.",
+    "bannerSubtitle": "Help build the future of Philippine governance through technology.",
     "bannerHighlight": "Volunteer-led. Open source. Community-driven.",
     "joinMovement": "Join Our Movement",
     "or": "or",
