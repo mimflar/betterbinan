@@ -1,3 +1,4 @@
+import { governmentName } from '../lib/site';
 import { Helmet } from 'react-helmet-async';
 
 interface SEOProps {
@@ -17,12 +18,12 @@ export default function SEO({
   image,
   url,
   type = 'website',
-  siteName = import.meta.env.VITE_GOVERNMENT_NAME || 'Local Government Website',
+  siteName = governmentName,
 }: SEOProps) {
-  const defaultTitle = `${siteName} - Official Government Website`;
+  const defaultTitle = `${siteName} - Community Service Guide`;
   const defaultDescription =
     import.meta.env.VITE_SITE_DESCRIPTION ||
-    `Official website of ${siteName}. Access government services, information, and resources.`;
+    `Community service guide for ${siteName}. Access government services, information, and resources.`;
   const defaultKeywords =
     import.meta.env.VITE_SITE_KEYWORDS ||
     'government, local government, services, public services, civic services';
@@ -68,30 +69,12 @@ export default function SEO({
       {/* Additional Meta Tags */}
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-      <meta name="theme-color" content="#0066eb" />
+      <meta name="theme-color" content="#065f46" />
 
       {/* Canonical URL */}
       <link rel="canonical" href={fullUrl} />
 
-      {/* Favicon */}
-      <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-      <link
-        rel="apple-touch-icon"
-        sizes="180x180"
-        href="/apple-touch-icon.png"
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="32x32"
-        href="/favicon-32x32.png"
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="16x16"
-        href="/favicon-16x16.png"
-      />
+      <link rel="icon" type="image/svg+xml" href="/Binan_City_Seal.svg" />
 
       {/* Preconnect to external domains */}
       <link rel="preconnect" href="https://fonts.googleapis.com" />

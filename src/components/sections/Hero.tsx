@@ -1,21 +1,62 @@
-import { useTranslation } from 'react-i18next';
-import { Heading } from '../ui/Heading';
-import { Text } from '../ui/Text';
-
+import {
+  ArrowRight,
+  Building2,
+  GraduationCap,
+  Heart,
+  Users,
+} from 'lucide-react';
+import { Link } from 'react-router-dom';
+import ServiceSearch from '../ui/ServiceSearch';
+import { governmentName } from '../../lib/site';
+const shortcuts = [
+  { label: 'Business permits', href: '/services/business', icon: Building2 },
+  {
+    label: 'Scholarships',
+    href: '/services/education/apply-for-local-scholarships',
+    icon: GraduationCap,
+  },
+  { label: 'Health services', href: '/services/health-services', icon: Heart },
+  {
+    label: 'Financial & family assistance',
+    href: '/services/social-welfare',
+    icon: Users,
+  },
+];
 export default function Hero() {
-  const { t } = useTranslation();
   return (
-    <div className="bg-gradient-to-r from-primary-600 to-primary-700 text-white py-12 md:py-24">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-          {/* Left section with title and search */}
-          <div className="animate-fade-in">
-            <Text transform="uppercase">Welcome to</Text>
-            <Heading>{import.meta.env.VITE_GOVERNMENT_NAME}</Heading>
-            <Text>{t('hero.subtitle')}</Text>
+    <section className="hero-section">
+      <div className="container mx-auto px-4 grid gap-10 lg:grid-cols-[1.3fr_1fr] lg:gap-16 items-center">
+        <div>
+          <p className="eyebrow text-primary-200">
+            Your community. Your services.
+          </p>
+          <h1 className="hero-title">
+            A simpler way to find {governmentName} services.
+          </h1>
+          <p className="mt-5 max-w-xl text-lg text-primary-100 leading-relaxed">
+            Find requirements, understand the steps, and know where to go. Local
+            information, all in one place.
+          </p>
+          <div className="mt-7">
+            <ServiceSearch />
           </div>
+          <p className="mt-3 text-sm text-primary-100">
+            Search our service guides and department information.
+          </p>
+        </div>
+        <div className="quick-links">
+          <p className="eyebrow text-primary-200 mb-2">
+            What do you need help with?
+          </p>
+          {shortcuts.map(({ label, href, icon: Icon }) => (
+            <Link key={href} to={href} className="quick-link">
+              <Icon className="h-5 w-5 text-primary-200" aria-hidden="true" />
+              <span className="flex-1">{label}</span>
+              <ArrowRight className="h-4 w-4" aria-hidden="true" />
+            </Link>
+          ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }

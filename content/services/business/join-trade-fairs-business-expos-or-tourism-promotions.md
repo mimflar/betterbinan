@@ -119,7 +119,7 @@ Showcase your products and services, meet buyers, and boost your brand by joinin
 
 ---
 
-# Key Local Contacts — City of Biñan
+## Key Local Contacts — City of Biñan
 
 Use these offices when coordinating for **trade fairs, business expos, permits, and tourism promotion activities**.
 

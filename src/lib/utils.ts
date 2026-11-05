@@ -21,3 +21,11 @@ export function truncateText(text: string, maxLength: number): string {
 export const getRandomNumber = (min: number, max: number): number => {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 };
+
+export function headingId(text: string): string {
+  return text
+    .toLowerCase()
+    .replace(/[*_`]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '');
+}

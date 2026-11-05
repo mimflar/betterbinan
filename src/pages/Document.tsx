@@ -3,7 +3,7 @@ import Breadcrumbs from '../components/ui/Breadcrumbs';
 import { Heading } from '../components/ui/Heading';
 import { Text } from '../components/ui/Text';
 import { Banner } from '@bettergov/kapwa/banner';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
@@ -12,7 +12,7 @@ import {
   type MarkdownContent,
 } from '../lib/markdownLoader';
 import { createMarkdownComponents } from '../lib/markdownComponents';
-import { Card, CardContent, CardHeader } from '@bettergov/kapwa/card';
+import { Card, CardContent } from '@bettergov/kapwa/card';
 import { getTypographyTheme } from '../lib/typographyThemes';
 import {
   serviceCategories,
@@ -23,6 +23,7 @@ import {
   type CategoryIndex,
 } from '../data/yamlLoader';
 import SEO from '../components/SEO';
+import { headingId } from '../lib/utils';
 
 interface DocumentProps {
   theme?: string;
@@ -34,6 +35,9 @@ export default function Document({
   categoryType,
 }: DocumentProps) {
   const { documentSlug, category } = useParams();
+  const [contentsOpen, setContentsOpen] = useState(
+    () => window.matchMedia('(min-width: 768px)').matches
+  );
   const [markdownContent, setMarkdownContent] =
     useState<MarkdownContent | null>(null);
   const [nestedIndex, setNestedIndex] = useState<CategoryIndex | null>(null);
@@ -55,10 +59,13 @@ export default function Document({
       return;
     }
 
+    let active = true;
     const loadContent = async () => {
       try {
         setLoading(true);
         setError(null);
+        setNestedIndex(null);
+        setMarkdownContent(null);
 
         const isGovernment = categoryType === 'government';
         const categories = isGovernment
@@ -71,6 +78,7 @@ export default function Document({
         // If the slug maps to its own index, render it as a nested listing
         if (isNestedCategory(documentSlug)) {
           const index = await getCategorySubcategories(documentSlug);
+          if (!active) return;
           setNestedIndex(index);
           setBreadcrumbs([
             { label: 'Home', href: '/' },
@@ -92,6 +100,7 @@ export default function Document({
           category,
           categoryType
         );
+        if (!active) return;
         setMarkdownContent(content);
 
         setBreadcrumbs([
@@ -107,15 +116,19 @@ export default function Document({
           },
         ]);
       } catch (err) {
+        if (!active) return;
         setError(
           err instanceof Error ? err.message : 'Failed to load document'
         );
       } finally {
-        setLoading(false);
+        if (active) setLoading(false);
       }
     };
 
     loadContent();
+    return () => {
+      active = false;
+    };
   }, [documentSlug, category, categoryType]);
 
   if (loading) {
@@ -133,9 +146,12 @@ export default function Document({
         <Banner
           type="error"
           title="Document Not Found"
-          description={error}
+          description="This guide is unavailable. Check the address or search for another service."
           icon
         />
+        <Link className="text-link inline-block mt-5" to="/search">
+          Search service guides →
+        </Link>
       </Section>
     );
   }
@@ -150,9 +166,7 @@ export default function Document({
         />
         <Section className="p-3 mb-12">
           <Breadcrumbs className="mb-8" items={breadcrumbs} />
-          {nestedIndex.title && (
-            <Heading level={2}>{nestedIndex.title}</Heading>
-          )}
+          {nestedIndex.title && <Heading>{nestedIndex.title}</Heading>}
           {nestedIndex.description && (
             <Text className="text-gray-600 mb-4">
               {nestedIndex.description}
@@ -161,7 +175,7 @@ export default function Document({
           {nestedIndex.layout === 'grid' ? (
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {nestedPages.map((page, i) => (
-                <Card hoverable key={page.slug ?? i} className="h-full">
+                <Card key={page.slug ?? i} className="h-full">
                   <CardContent>
                     <h4 className="text-lg font-medium text-gray-900">
                       {page.name}
@@ -214,19 +228,59 @@ export default function Document({
       />
       <Section className="p-3 mb-12">
         <Breadcrumbs className="mb-8" items={breadcrumbs} />
-        <Card className="mb-8 markdown-content">
-          <CardHeader>
-            {markdownContent.description && (
-              <CardContent>{markdownContent.description}</CardContent>
-            )}
+        <div className="guide-layout">
+          <article className="markdown-content">
             <ReactMarkdown
               remarkPlugins={[remarkGfm]}
               components={markdownComponents}
             >
               {markdownContent.content}
             </ReactMarkdown>
-          </CardHeader>
-        </Card>
+            <div className="mt-10 rounded-lg border border-primary-100 bg-primary-50 p-5 text-sm leading-relaxed text-primary-900">
+              <h2 className="font-semibold">Before you visit</h2>
+              <p className="mt-2">
+                Confirm current requirements, fees, and schedules with the
+                responsible office. This guide does not submit an application.
+              </p>
+              <a
+                className="text-link inline-block mt-3"
+                href="https://www.binan.gov.ph/"
+              >
+                Find official city contact information ↗
+              </a>
+            </div>
+          </article>
+          <aside>
+            <details
+              className="guide-contents"
+              open={contentsOpen}
+              onToggle={event => setContentsOpen(event.currentTarget.open)}
+            >
+              <summary className="font-semibold text-primary-900">
+                On this page
+              </summary>
+              <nav aria-label="Guide sections" className="mt-3">
+                {markdownContent.content
+                  .split('\n')
+                  .filter(line => /^##\s/.test(line))
+                  .map(line => {
+                    const title = line.replace(/^##\s+/, '').trim();
+                    return (
+                      <a key={title} href={`#${headingId(title)}`}>
+                        {title.replace(/[*_`]/g, '')}
+                      </a>
+                    );
+                  })}
+              </nav>
+              <Link
+                to="/services"
+                className="border-t border-primary-200 mt-3 pt-3!"
+              >
+                ← All services
+              </Link>
+            </details>
+          </aside>
+        </div>
       </Section>
     </>
   );

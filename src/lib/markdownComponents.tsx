@@ -4,20 +4,13 @@
 
 import { type TypographyTheme } from './typographyThemes';
 import { type ReactNode, type HTMLAttributes } from 'react';
+import { headingId } from './utils';
 import { TableWithToggle } from './TableWithToggle';
-
-// Extended theme type to include dynamic component keys
-type ExtendedTheme = TypographyTheme & {
-  components: TypographyTheme['components'] & {
-    [key: string]: string | undefined;
-  };
-};
 
 /**
  * Creates ReactMarkdown components with custom styling based on typography theme
  */
 export function createMarkdownComponents(theme: TypographyTheme) {
-  const extendedTheme = theme as ExtendedTheme;
   return {
     h1: ({
       children,
@@ -31,7 +24,11 @@ export function createMarkdownComponents(theme: TypographyTheme) {
       children,
       ...props
     }: { children?: ReactNode } & HTMLAttributes<HTMLHeadingElement>) => (
-      <h2 className={theme.components.h2} {...props}>
+      <h2
+        id={headingId(String(children))}
+        className={theme.components.h2}
+        {...props}
+      >
         {children}
       </h2>
     ),
@@ -86,112 +83,39 @@ export function createMarkdownComponents(theme: TypographyTheme) {
     ul: ({
       children,
       ...props
-    }: { children?: ReactNode } & HTMLAttributes<HTMLUListElement>) => {
-      // Debug: Log what we're getting
-      console.log('UL Component - Props:', props);
-      console.log('UL Component - Children:', children);
-
-      // Check if this ul contains task list items
-      const hasTaskItems =
-        Array.isArray(children) &&
-        children.some(
-          child =>
-            typeof child === 'object' &&
-            child?.props?.className?.includes('task-list-item')
-        );
-
-      console.log('Has Task Items:', hasTaskItems);
-
-      // For task lists, don't wrap with ul - just return children directly
-      if (hasTaskItems) {
-        return <>{children}</>;
-      }
-
-      // For regular lists, use the theme styling
-      return (
-        <ul className={theme.components.ul} {...props}>
-          {children}
-        </ul>
-      );
-    },
+    }: { children?: ReactNode } & HTMLAttributes<HTMLUListElement>) => (
+      <ul {...props} className={theme.components.ul}>
+        {children}
+      </ul>
+    ),
     ol: ({
       children,
       ...props
     }: { children?: ReactNode } & HTMLAttributes<HTMLOListElement>) => (
-      <ol
-        className={`${theme.components.ol} [counter-reset:list-item]`}
-        {...props}
-      >
+      <ol {...props} className={theme.components.ol}>
         {children}
       </ol>
     ),
     li: ({
       children,
+      className,
       ...props
-    }: { children?: ReactNode } & HTMLAttributes<HTMLLIElement>) => {
-      // Check if this is a nested list item
-      const isNested = props.className?.includes('nested') || false;
-
-      // Use the appropriate li class based on context
-      const liClass = theme.components.li || '';
-      const orderedLiClass = extendedTheme.components['li.ordered'] || liClass;
-      const taskLiClass =
-        extendedTheme.components['li.task-list-item'] || liClass;
-
-      // Detect if this is a task list item
-      const isTaskList = props.className?.includes('task-list-item');
-
-      // For now, we'll use a simple approach - detect if parent is ol
-      // This is a simplified approach - in a real implementation, you might want to use React context
-      const isOrderedList = props.className?.includes('ordered') || false;
-
-      const finalClassName = isTaskList
-        ? taskLiClass
-        : isOrderedList
-          ? orderedLiClass
-          : liClass;
-
-      // For task lists, replace checkbox with emoji
-      if (isTaskList) {
-        const processedChildren = Array.isArray(children)
-          ? children.map((child: ReactNode) => {
-              if (
-                typeof child === 'object' &&
-                child !== null &&
-                'props' in child
-              ) {
-                const childElement = child as { props?: { type?: string } };
-                if (childElement.props?.type === 'checkbox') {
-                  // Replace checkbox with emoji
-                  return '✅';
-                }
-              }
-              return child;
-            })
-          : children;
-
-        return (
-          <li
-            className={`${finalClassName} ${isNested ? 'ml-4' : ''}`}
-            {...props}
-          >
-            <span className="pr-0">✅</span>
-            {Array.isArray(processedChildren)
-              ? processedChildren.filter((child: ReactNode) => child !== '✅')
-              : processedChildren}
-          </li>
-        );
-      }
-
-      return (
-        <li
-          className={`${finalClassName} ${isNested ? 'ml-4' : ''}`}
-          {...props}
-        >
-          {children}
-        </li>
-      );
-    },
+    }: { children?: ReactNode } & HTMLAttributes<HTMLLIElement>) => (
+      <li
+        {...props}
+        className={
+          className?.includes('task-list-item')
+            ? 'list-none text-gray-700 mb-3'
+            : theme.components.li
+        }
+      >
+        {className?.includes('task-list-item') ? (
+          <label>{children}</label>
+        ) : (
+          children
+        )}
+      </li>
+    ),
     blockquote: ({
       children,
       ...props

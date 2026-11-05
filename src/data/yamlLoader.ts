@@ -123,3 +123,34 @@ export async function getCategorySubcategories(
 export function isNestedCategory(slug: string): boolean {
   return slug in categoryIndexMap;
 }
+
+/** Search only the category indexes that have real local content. */
+export interface SearchEntry {
+  title: string;
+  description: string;
+  href: string;
+  category: string;
+}
+export function getSearchEntries(): SearchEntry[] {
+  return (['services', 'government'] as const).flatMap(section => {
+    const categories =
+      section === 'services'
+        ? serviceCategories.categories
+        : governmentCategories.categories;
+    return categories
+      .filter(category => isNestedCategory(category.slug))
+      .flatMap(category => {
+        const index = yaml.load(
+          categoryIndexMap[category.slug]
+        ) as CategoryIndexData;
+        return (index.pages || [])
+          .filter(page => page.slug)
+          .map(page => ({
+            title: page.name,
+            description: page.description || '',
+            href: `/${section}/${category.slug}/${page.slug}`,
+            category: category.category,
+          }));
+      });
+  });
+}

@@ -2,11 +2,32 @@
 
 A modern, multilingual, and accessible website template designed specifically for local government units (LGUs) in the Philippines. Built with React, TypeScript, and Tailwind CSS.
 
+## City of Biñan portal
+
+The resident homepage includes service search, common-task shortcuts, and a
+compact category list on mobile. `/search?q=scholarships` links directly to a
+search; searches match words in service and department titles, descriptions,
+and category names. Search uses the registered YAML indexes in
+`src/data/yamlLoader.ts`; it does not search the full Markdown body or an
+external government database.
+
+- Set `VITE_GOVERNMENT_NAME` to override the `City of Biñan` fallback.
+- `/about`, `/accessibility`, and `/sitemap` are maintained portal pages.
+- Only registered government categories are promoted on the homepage. Other
+  existing category URLs show an explicit empty state until guides are added.
+- Service guides retain their existing URLs and include section jump links.
+  Published checklist states are read-only; they do not track applications.
+  Tables switch to a list on small screens and retain their contact links.
+- The current interface and service guides are in English. Additional languages
+  should be offered only when their interface copy and guides are available.
+- This community guide links residents to the official city website for current
+  details. Content accuracy still requires review by the responsible offices.
+
 ## ✨ Features
 
-- **🌐 Multilingual Support**: English, Filipino, Cebuano, and other Philippine languages
+- **🌐 Language support**: English; additional translations require complete interface and guide content
 - **📱 Responsive Design**: Mobile-first approach with modern UI/UX
-- **♿ Accessibility**: WCAG 2.1 compliant design
+- **♿ Accessibility**: Keyboard navigation, visible focus, and responsive layouts
 - **📝 Content Management**: YAML-based content system for easy updates
 - **🎨 Customizable**: Easy theming and branding customization
 - **⚡ Fast Performance**: Built with Vite for optimal loading speeds

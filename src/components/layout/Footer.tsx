@@ -1,126 +1,74 @@
-import React from 'react';
-import { Facebook, Twitter, Instagram, Youtube } from 'lucide-react';
-import { footerNavigation } from '../../data/navigation';
 import { Link } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
-
-const Footer: React.FC = () => {
-  const { t } = useTranslation('common');
-
-  const getSocialIcon = (label: string) => {
-    switch (label) {
-      case 'Facebook':
-        return <Facebook className="h-5 w-5" />;
-      case 'Twitter':
-        return <Twitter className="h-5 w-5" />;
-      case 'Instagram':
-        return <Instagram className="h-5 w-5" />;
-      case 'YouTube':
-        return <Youtube className="h-5 w-5" />;
-      default:
-        return null;
-    }
-  };
-
+import { ArrowUpRight } from 'lucide-react';
+import { governmentName, officialWebsite } from '../../lib/site';
+export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white">
-      <div className="container mx-auto px-4 pt-12 pb-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <footer className="site-footer">
+      <div className="container mx-auto px-4 py-10">
+        <div className="grid gap-8 md:grid-cols-[2fr_1fr_1fr]">
           <div>
-            <div className="flex items-center mb-4">
-              {
-                <img
-                  src="/Binan_City_Seal.svg"
-                  alt="City of Binan Logo"
-                  className="h-12 w-12 mr-3"
-                />
-              }
-
-              <div>
-                <div className="font-bold">{t('site_name')}</div>
-                <div className="text-xs text-gray-400">BetterGov.ph Portal</div>
-              </div>
-            </div>
-            <p className="text-gray-400 text-sm mb-4">
-              A community portal providing Philippine citizens, businesses, and
-              visitors with information and services.
+            <Link to="/" className="inline-flex items-center gap-3">
+              <img src="/Binan_City_Seal.svg" alt="" width="40" height="40" />
+              <span className="font-semibold text-lg">{governmentName}</span>
+            </Link>
+            <p className="mt-4 max-w-sm text-sm leading-relaxed text-gray-300">
+              A community guide to local services. Prepare for your visit, find
+              the right office, and understand your next step.
             </p>
-            <div className="flex space-x-4">
-              {footerNavigation.socialLinks.map(link => (
-                <Link
-                  key={link.label}
-                  to={link.href}
-                  className="text-gray-400 hover:text-white transition-colors"
-                  target="_blank"
-                  rel="noopener noreferrer"
+            <p className="mt-3 text-xs text-gray-300">
+              Service guides are currently available in English.
+            </p>
+          </div>
+          <nav aria-label="Footer services">
+            <h2 className="font-semibold mb-4">Find information</h2>
+            <ul className="space-y-3 text-sm text-gray-300">
+              <li>
+                <Link to="/services">All services</Link>
+              </li>
+              <li>
+                <Link to="/search">Search the guides</Link>
+              </li>
+              <li>
+                <Link to="/government">Local government</Link>
+              </li>
+              <li>
+                <a
+                  href={officialWebsite}
+                  className="inline-flex items-center gap-1"
                 >
-                  {getSocialIcon(link.label)}
-                </Link>
-              ))}
-            </div>
-          </div>
-
-          {footerNavigation.mainSections.map(section => (
-            <div key={section.title}>
-              <h3 className="text-lg font-semibold mb-4">{section.title}</h3>
-              <ul className="space-y-2">
-                {section.links.map(link => (
-                  <li key={link.label}>
-                    <Link
-                      to={link.href}
-                      className="text-gray-400 hover:text-white text-sm transition-colors"
-                    >
-                      {link.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+                  Official city website
+                  <ArrowUpRight className="h-3 w-3" aria-hidden="true" />
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <nav aria-label="About the portal">
+            <h2 className="font-semibold mb-4">About the portal</h2>
+            <ul className="space-y-3 text-sm text-gray-300">
+              <li>
+                <Link to="/about">About & contact</Link>
+              </li>
+              <li>
+                <Link to="/accessibility">Accessibility</Link>
+              </li>
+              <li>
+                <Link to="/sitemap">Sitemap</Link>
+              </li>
+              <li>
+                <a href="https://bettergov.ph/join-us">
+                  Contribute to BetterGov ↗
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
-
-        <div className="border-t border-gray-800 mt-8 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              {t('footer.copyright')}
-            </p>
-            <div className="flex space-x-6">
-              {/* <a
-                href="/privacy"
-                className="text-gray-400 hover:text-white text-sm transition-colors"
-              >
-                Privacy Policy
-              </a>
-              <a
-                href="/terms"
-                className="text-gray-400 hover:text-white text-sm transition-colors"
-              >
-                Terms of Use
-              </a> */}
-              <Link
-                to="https://github.com/bettergovph/bettergov"
-                className="text-gray-400 hover:text-white text-sm transition-colors"
-              >
-                Contribute at GitHub
-              </Link>
-              <Link
-                to="/sitemap"
-                className="text-gray-400 hover:text-white text-sm transition-colors"
-              >
-                Sitemap
-              </Link>
-              <a
-                href="/accessibility"
-                className="text-gray-400 hover:text-white text-sm transition-colors"
-              >
-                Accessibility
-              </a>
-            </div>
-          </div>
+        <div className="border-t border-white/15 mt-8 pt-6 flex flex-col gap-3 sm:flex-row sm:justify-between text-xs text-gray-300">
+          <p>Built for the community. Powered by BetterGov.</p>
+          <a href={officialWebsite}>
+            Confirm current service details with the responsible city office ↗
+          </a>
         </div>
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}

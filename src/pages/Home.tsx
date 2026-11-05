@@ -8,14 +8,14 @@ const Home: React.FC = () => {
     <>
       <SEO
         title="Home"
-        description="Official website of your local government. Access government services, information, and resources."
+        description="Find City of Biñan service guides, requirements, and local government information."
         keywords="government, local government, services, public services, civic services"
       />
-      <main className="flex-grow">
+      <div>
         <Hero />
         <ServicesSection />
         <GovernmentActivitySection />
-      </main>
+      </div>
     </>
   );
 };

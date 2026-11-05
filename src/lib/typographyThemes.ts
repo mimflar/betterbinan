@@ -45,11 +45,9 @@ export const defaultTheme: TypographyTheme = {
     h6: 'text-base text-gray-800 mb-3 mt-4 ',
     p: 'text-base text-gray-700 mb-4 leading-relaxed ',
     small: 'text-sm text-gray-600 mb-3 ',
-    ul: 'list-none mb-6 space-y-4 pl-0',
-    ol: 'list-none mb-6 space-y-4 pl-0',
-    li: 'text-base text-gray-700 leading-relaxed relative pl-6 mb-2 before:content-["•"] before:absolute before:left-0 before:text-gray-700 before:font-bold before:text-lg ',
-    'li.ordered':
-      'text-base text-gray-700 leading-relaxed relative pl-8 mb-2 before:content-[counter(list-item)] before:absolute before:left-0 before:text-gray-700 before:font-bold before:text-base before:counter-increment-[list-item] ',
+    ul: 'list-disc mb-6 space-y-2 pl-6',
+    ol: 'list-decimal mb-6 space-y-2 pl-6',
+    li: 'text-base text-gray-700 leading-relaxed mb-2',
     blockquote:
       'border-l-4 border-blue-600 pl-6 py-4 mb-6 bg-blue-50 text-gray-700 italic text-base leading-relaxed ',
     code: 'bg-gray-100 text-gray-800 px-2 py-1 rounded text-sm font-mono border',

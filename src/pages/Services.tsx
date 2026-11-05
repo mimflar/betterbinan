@@ -1,3 +1,4 @@
+import { governmentName } from '../lib/site';
 import Section from '../components/ui/Section';
 import { useParams, Link } from 'react-router-dom';
 import { Heading } from '../components/ui/Heading';
@@ -8,7 +9,7 @@ import {
   type Subcategory,
   type CategoryIndex,
 } from '../data/yamlLoader';
-import * as LucideIcons from 'lucide-react';
+import CategoryIcon from '../components/ui/CategoryIcon';
 import Breadcrumbs from '../components/ui/Breadcrumbs';
 import ServicesSection from '../components/home/ServicesSection';
 import SEO from '../components/SEO';
@@ -30,18 +31,23 @@ const Services: React.FC = () => {
   };
 
   const categoryData = getCategory();
-  const Icon = LucideIcons[
-    categoryData?.icon as keyof typeof LucideIcons
-  ] as React.ComponentType<{ className?: string }>;
-
   useEffect(() => {
+    let active = true;
     if (category && categoryData) {
       setLoading(true);
+      setCategoryIndex({ layout: 'list', pages: [] });
       getCategorySubcategories(category)
-        .then(setCategoryIndex)
+        .then(index => {
+          if (active) setCategoryIndex(index);
+        })
         .catch(console.error)
-        .finally(() => setLoading(false));
+        .finally(() => {
+          if (active) setLoading(false);
+        });
     }
+    return () => {
+      active = false;
+    };
   }, [category, categoryData]);
 
   if (!category) {
@@ -49,12 +55,13 @@ const Services: React.FC = () => {
       <>
         <SEO
           title="Services"
-          description={`All services provided by the ${import.meta.env.VITE_GOVERNMENT_NAME} government. Find what you need for citizenship, business, education, and more.`}
+          description={`Browse service guides for ${governmentName}. Find requirements and next steps for business, health, education, and more.`}
           keywords="government services, public services, local government, civic services"
         />
         <ServicesSection
+          asPage
           title={`All local government services`}
-          description={`All services provided by the ${import.meta.env.VITE_GOVERNMENT_NAME} government. Find what you need for citizenship, business, education, and more.`}
+          description={`Browse service guides for ${governmentName}. Find requirements and next steps for business, health, education, and more.`}
         />
       </>
     );
@@ -82,13 +89,34 @@ const Services: React.FC = () => {
       />
       <Section className="p-3 mb-12">
         <Breadcrumbs className="mb-8" />
-        <Icon className="h-8 w-8 mb-4 text-primary-600 rounded-md" />
+        <CategoryIcon
+          name={categoryData.icon}
+          className="h-8 w-8 mb-4 text-primary-700"
+        />
         <Heading>{categoryData.category || category}</Heading>
         <Text className="text-gray-600 mb-6">{categoryData.description}</Text>
 
         {loading ? (
           <div className="flex justify-center items-center p-8">
             <Text>Loading services...</Text>
+          </div>
+        ) : subcategories.length === 0 ? (
+          <div className="empty-state">
+            <h2 className="text-xl font-semibold">
+              No guides published here yet
+            </h2>
+            <p className="mt-2 text-gray-600">
+              Explore another category or visit the official city website for
+              current information.
+            </p>
+            <div className="mt-5 flex flex-wrap justify-center gap-5">
+              <Link className="text-link" to="/services">
+                Browse services
+              </Link>
+              <a className="text-link" href="https://www.binan.gov.ph/">
+                Official city website ↗
+              </a>
+            </div>
           </div>
         ) : (
           <>
@@ -112,9 +140,9 @@ const Services: React.FC = () => {
                       className="h-full border-t-4 border-primary-500"
                     >
                       <CardContent>
-                        <h4 className="text-lg font-medium text-gray-900">
+                        <h2 className="text-lg font-medium text-gray-900">
                           {subcategory.name}
-                        </h4>
+                        </h2>
                         {subcategory.description && (
                           <p className="mt-2 text-sm text-gray-600">
                             {subcategory.description}
@@ -137,9 +165,9 @@ const Services: React.FC = () => {
                   >
                     <Card hoverable className="mb-4">
                       <CardContent>
-                        <h4 className="text-lg font-medium text-gray-900">
+                        <h2 className="text-lg font-medium text-gray-900">
                           {subcategory.name}
-                        </h4>
+                        </h2>
                         {subcategory.description && (
                           <p className="mt-2 text-sm text-gray-600">
                             {subcategory.description}
