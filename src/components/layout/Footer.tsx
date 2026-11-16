@@ -40,6 +40,15 @@ export default function Footer() {
                   <ArrowUpRight className="h-3 w-3" aria-hidden="true" />
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://binan-budget.h-847.workers.dev"
+                  className="inline-flex items-center gap-1"
+                >
+                  Budget projects, 2020 to 2027
+                  <ArrowUpRight className="h-3 w-3" aria-hidden="true" />
+                </a>
+              </li>
             </ul>
           </nav>
           <nav aria-label="About the portal">
